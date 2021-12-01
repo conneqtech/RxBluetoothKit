@@ -64,5 +64,6 @@ public struct CentralManagerRestoredState: CentralManagerRestoredStateType {
             guard let cbPeripheral = $0.peripheral else { return nil }
             let peripheral = centralManager.retrievePeripheral(for: cbPeripheral);
             return Service(peripheral: peripheral, service: $0);
+        }
     }
 }
